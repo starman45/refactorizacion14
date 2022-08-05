@@ -53,7 +53,6 @@ RUN apt-get update && \
         npm \
         python3-num2words \
         python3-pdfminer \
-        #python3-pip \
         python3-phonenumbers \
         python3-pyldap \
         python3-qrcode \
