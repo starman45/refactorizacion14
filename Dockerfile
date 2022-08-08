@@ -155,6 +155,9 @@ ENV \
 COPY ./resources/ /
 COPY ./scripts/dockerfile_extra_addons.sh /
 
+# Enterprise and non_ent libraries Odoo
+COPY ./repositories/ /opt/odoo_dir/
+
 # This is needed to fully build with modules and python requirements
 RUN sudo mkdir -p ${ODOO_BASEPATH} ${ODOO_DATA_DIR} ${ODOO_LOGS_DIR} ${ODOO_EXTRA_ADDONS} ${ODOO_EXTRA_DEV_ADDONS} ${ODOO_OCA_ADDONS} ${ODOO_NON_ENT_ADDONS} /etc/odoo/ /usr/share/GeoIP/
 
